@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Business</th>
+    <th>Description</th>
+<!--     <th>Location</th>
+    <th>Location</th>
+    <th>Day of Week</th>
+    <th>Start Time</th>
+    <th>End Time</th> -->
+  </tr>
+
+<% @foodtrucks.each do |foodtruck| %>
+  <tr>
+    <td><%= foodtruck["applicant"] %></td>
+    <td><%= foodtruck["optionaltext"] %></td>
+  </tr>
+<% end %>
+</table>
